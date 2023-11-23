@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+  }
+
+  .overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: hsl(178, 100%, 50%);
+  }
+
+  .container:hover .overlay {
+    opacity: 0.5;
+  }
+
+  .container:hover .eye-icon {
+    opacity: 1;
+  }
+
+  .eye-icon {
+    z-index: 50;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.3s ease;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
