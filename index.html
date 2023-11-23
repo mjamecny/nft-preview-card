@@ -18,5 +18,54 @@
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
-  <body></body>
+  <body class="bg-darkBlue flex h-screen justify-center items-center p-2.4">
+    <div class="bg-darkBlue2 max-w-sm flex flex-col gap-2.4 p-2.4 rounded-xl">
+      <div class="container">
+        <img
+          class="image rounded-lg"
+          src="images/image-equilibrium.jpg"
+          alt=""
+        />
+        <div class="overlay rounded-lg"></div>
+        <img class="eye-icon" src="images/icon-view.svg" alt="view icon" />
+      </div>
+
+      <div class="flex flex-col gap-0.8">
+        <h1>
+          <a
+            class="text-2 text-white font-bold hover:text-cyan transition-colors duration-300"
+            href="#"
+            >Equilibrium #3429</a
+          >
+        </h1>
+        <p class="text-softBlue">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+      </div>
+      <div class="flex flex-col gap-1.6">
+        <div class="flex justify-between">
+          <div class="flex items-center gap-0.8">
+            <img src="images/icon-ethereum.svg" alt="ethereum icon" />
+            <p class="text-cyan">0.041 ETH</p>
+          </div>
+          <div class="flex items-center gap-0.8">
+            <img src="images/icon-clock.svg" alt="clock icon" />
+            <p class="text-softBlue">3 days left</p>
+          </div>
+        </div>
+        <hr class="text-darkBlue3" />
+        <div class="flex gap-1.2 items-center">
+          <img class="w-[36px]" src="images/image-avatar.png" alt="avatar" />
+          <p class="text-softBlue">
+            Creation of
+            <a
+              href="#"
+              class="text-white hover:text-cyan transition-colors duration-300"
+              >Jules Wyvern</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
